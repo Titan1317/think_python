@@ -9,19 +9,23 @@ from is_palindrome import is_palindrome
 def solve_puzzle(age:int) -> bool:
     age_mom = age
     age_son = 0
+    solution = 0
     counter = 0
-    life_expectancy = 100 - age
-    i = 0
-    while life_expectancy:
-        if counter == 8:
-            return age_son
+    life_points = 100 - age
+    while life_points:
         age_son += 1
         age_mom += 1
         first_half = str(age_mom)
         second_half = str(age_son)
         if is_palindrome(first_half + second_half.zfill(2)):
             counter += 1
-        life_expectancy -= 1
+            if counter == 6:
+                solution = age_son  
+        # if counter == 6:
+        #     current_age_son = age_son
+        if counter == 8:
+            return solution
+        life_points -= 1
     return False
     
 

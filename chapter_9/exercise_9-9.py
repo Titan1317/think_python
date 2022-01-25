@@ -21,8 +21,6 @@ def solve_puzzle(age:int) -> bool:
             counter += 1
             if counter == 6:
                 solution = age_son  
-        # if counter == 6:
-        #     current_age_son = age_son
         if counter == 8:
             return solution
         life_points -= 1

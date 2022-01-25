@@ -1,0 +1,20 @@
+stack diagram:
+	__main__ --> bob -> turtle.Turtle()
+		     length -> 6
+
+	koch_curve --> t -> turtle.Turtle()
+		       length -> 6
+
+	koch_curve --> t -> turtle.Turtle()
+		       length -> 3
+
+	koch_curve --> t -> turtle.Turtle()
+		       length -> 3
+
+	koch_curve --> t -> turtle.Turtle()
+		       length -> 3
+
+	koch_curve --> t -> turtle.Turtle()
+		       length -> 3
+
+	

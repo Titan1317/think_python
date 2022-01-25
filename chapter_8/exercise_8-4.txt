@@ -1,0 +1,8 @@
+- This code returns true when the first letter in s is lowercase.
+- This code always returns 'True' since the comparison does not check wether or not
+	the individual letters of the argument are lowercase rather, it checks if the 
+	string 'c' is lowercase.
+	Moreover, the return value is not bool but a string.
+- This function checks wether the last character in a given string is lowercase.
+- Correct code.
+- checks wether all characters in a string are lowercase. 

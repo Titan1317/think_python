@@ -17,7 +17,4 @@ if __name__ == '__main__':
         number_3 = str(i + 3)
         if is_palindrome(number[-4:]) and is_palindrome(number_1[-5:]) and is_palindrome(number_2[1:-1]) and is_palindrome(number_3):
             print(number)
-            print(number_1)
-            print(number_2)
-            print(number_3)
         i += 1

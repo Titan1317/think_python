@@ -1,5 +1,5 @@
 """ This module contains a code example related to
-Think Python, 2nd Edition, Chapter 10, Exercise 10-11
+Think Python, 2nd Edition, Chapter 10, Exercise 10-12
 by Allen Downey
     Code written by Mustafa Ali.
 """

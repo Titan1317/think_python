@@ -6,6 +6,9 @@ by Allen Downey
 
 
 def cumsum(t:list) -> list:
+    """ Takes a list of numbers and returns the cumulative
+        sum.
+    """
     result = []
     cum = 0
     for i in t:

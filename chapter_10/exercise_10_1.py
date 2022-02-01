@@ -12,4 +12,6 @@ def nested_sum(t:list) -> int:
     return sum
 
 
-
+if __name__ == '__main__':
+    t = [[1, 2], [3], [4, 5, 6]]
+    print(nested_sum(t))

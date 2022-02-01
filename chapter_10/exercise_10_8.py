@@ -34,4 +34,3 @@ if __name__ == '__main__':
             count += 1
     probability = 100 * count / samples 
     print(probability)
-            

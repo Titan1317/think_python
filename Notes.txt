@@ -1,6 +1,7 @@
-1) A program is a sequence of instructions that specify a computation.
+Programs:
+• A program is a sequence of instructions that specify a computation.
 
-2) Programming is the process of breaking down a large, complex task 
+• Programming is the process of breaking down a large, complex task 
 	into smaller and smaller subtasks, until the subtasks are simple
 	enough be performed with one of the following basic instructions;
 
@@ -15,11 +16,11 @@
 	-Repition:
 		Perform some action repeatedly, usually with some variation.
 
-3) A value is one of the basic things a program works with like a letter or a number.
+• A value is one of the basic things a program works with like a letter or a number.
 
-4) Programming languages are formal languages that have been designed to express computations.
+• Programming languages are formal languages that have been designed to express computations.
 
-5) Syntax rules in formal languages are strict and govern the structure of statements.
+• Syntax rules in formal languages are strict and govern the structure of statements.
 	They come in two flavors:
 		-Tokens:
 			-3 += 3$6
@@ -28,21 +29,22 @@
 			-3 += 3
 			+= is not a legal combination of tokens in math 
 
-6) Variables are names that refer to values.
+• Variables are names that refer to values.
 
-7) Assignment are names that refer to a value.
+• Assignment are names that refer to a value.
 
-8) An expression is a combination of vlaues, variables and operators.
+• An expression is a combination of vlaues, variables and operators.
 
-9) The interpreter evaluates expressions and executes statements.
+• The interpreter evaluates expressions and executes statements.
 
-10) A statement is a unit of code that has an ffect like creating a variable or displaying a value. Statements generally don't have values.
+• A statement is a unit of code that has an ffect like creating a variable or displaying a value. Statements generally don't have values.
 
-11) A traceback tells you what program file the error was in, what line and what functions were executing at that time.
+• A traceback tells you what program file the error was in, what line and what functions were executing at that time.
 	The order of the functions in traceback is the same as the stack diagram.
 
-12) A development plan is a process for writing programs. The process we used in this
-	case study is “encapsulation and generalization”. The steps of this process are:
+PROGRAM DEVELOPMENT:
+
+• A development plan is a process for writing programs. One process is is “encapsulation and generalization”. The steps of this process are:
 
 	1. Start by writing a small program with no function definitions.
 
@@ -58,7 +60,7 @@
 		you have similar code in several places, consider factoring it into
 		an appropriately general function.
 
-13) The key aspects of the 'incremental development' process are:
+• The key aspects of the 'incremental development' process are:
 	1. Start with a working program and make small incremental changes. At any point,
 		if there is an error, you should have a good idea where it is.
 
@@ -68,7 +70,7 @@
 		or consolidate multiple statements into compound expressions, but only if it does
 		not make the program difficult to read.
 
-14) Breaking a large program into smaller functions creates natural checkpoints for
+• Breaking a large program into smaller functions creates natural checkpoints for
 	debugging. If a function is not working, there are three possibilities to consider:
 
 		• There is something wrong with the arguments the function is getting; a precondition
@@ -78,15 +80,48 @@
 
 		• There is something wrong with the return value or the way it is being used.
 
-15) Guarding is a programming pattern that uses conditional statements to check for and handle
+• Guarding is a programming pattern that uses conditional statements to check for and handle
 	circumstances that might cause an error.
 
-16) Scaffolding is code that is used during program development but is not part of the final version.
+• Scaffolding is code that is used during program development but is not part of the final version.
 
-17) 
+LISTS:
 
+• The syntax for accessing the elements of a list is the same as for accessing the characters
+	of a string—the bracket operator. The expression inside the brackets specifies the
+	index. Remember that the indices start at 0.
 
+• List indices work the same way as string indices:
+	- Any integer expression can be used as an index.
+	- If you try to read or write an element that does not exist, you get an IndexError.
+	- If an index has a negative value, it counts backward from the end of the list.
 
+• Operators:
+    The in operator also works on lists.
+    The slice operator also works on lists.
+    The + operator concatenates list.
+    The * operator repeats a list a given number of times.
+    If you don’t need the removed value, you can use the del operator. del list[index]
+
+• If you want to write or update the elements, you need the indices.
+
+• Since lists are mutable, it is often useful to make a copy before performing operations
+	that modify lists.
+
+• The append method adds a new element to the end of a list and returns None.
+	- Extend takes a list as an argument and appends all of the elements, leaves the list
+		unmodified.
+	- Sort arranges the elements of the list from low to high and return None.
+
+• There are several ways to delete elements from a list. If you know the index of the
+	element you want, you can use the pop method, which returns the element.
+	- If you don’t provide an index, it deletes and returns the last element.
+	- If you know the element you want to remove (but not the index), you can use remove,
+		The return value from remove is None
+	
+• The list function breaks a string into individual letters and returns a list of all the
+	letters. If you want to break a string into words, you can use the split method, an 
+	optional argument called a delimiter specifies which characters to use as word boundaries.
 
 
 

@@ -29,7 +29,12 @@ Programs:
 			-3 += 3
 			+= is not a legal combination of tokens in math 
 
-• Variables are names that refer to values.
+• Variables are names that refer to ojects.
+
+• Referencing is the association between a variable and its value.
+
+• Aliasing is a circumstance where two or more variables refer to the same object.
+	(a is b) == True
 
 • Assignment are names that refer to a value.
 
@@ -37,10 +42,13 @@ Programs:
 
 • The interpreter evaluates expressions and executes statements.
 
+• An object is something a variable can refer to. An object has a type and a value.
+
 • A statement is a unit of code that has an ffect like creating a variable or displaying a value. Statements generally don't have values.
 
 • A traceback tells you what program file the error was in, what line and what functions were executing at that time.
 	The order of the functions in traceback is the same as the stack diagram.
+
 
 PROGRAM DEVELOPMENT:
 
@@ -85,11 +93,30 @@ PROGRAM DEVELOPMENT:
 
 • Scaffolding is code that is used during program development but is not part of the final version.
 
+
+STRINGS:
+
+• A sequence is an ordered collection of values where each value is identified by an integer
+	index.
+
+• An index is an integer value used to select an item in a sequence, such as a character in a
+	string. In Python indices start from 0.
+
+• An item is one of the values in a sequence.
+
+• A slice is a part of a string specified by a range of indices.
+
+• Traversing is to iterate through the items in a sequence, performing a similar operation on each.
+
+• Searching is a pattern of traversal that stops when it finds what it is looking for.
+
+
 LISTS:
 
 • The syntax for accessing the elements of a list is the same as for accessing the characters
 	of a string—the bracket operator. The expression inside the brackets specifies the
 	index. Remember that the indices start at 0.
+
 
 • List indices work the same way as string indices:
 	- Any integer expression can be used as an index.
@@ -124,7 +151,13 @@ LISTS:
 	optional argument called a delimiter specifies which characters to use as word boundaries.
 
 
+• Reducing is a processing pattern that traverses a sequence and accumulates the elements into
+	a single result.
 
+• Mapping is a processing pattern that traverses a sequence and performs an operation on
+	each element.
 
+• Filtering is a processing pattern that traverses a list and selects the elements that satisfy
+	some criterion.
 
 	

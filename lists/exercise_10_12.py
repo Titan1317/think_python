@@ -4,8 +4,11 @@ by Allen Downey
     Code written by Mustafa Ali.
 """
 
+from exercise_10_9 import concatenate_words
+from exercise_10_10 import in_bisect
+
 def interlock(word_1:str, word_2:str, start_index:int, alternate_step:int) -> str:
-    """ Takes two strings of equal length and interlocks them.
+    """ Takes alternating characters from each string and makes a new string.
         Two words “interlock” if taking alternating letters from 
         each forms a new word.
     """    
@@ -21,11 +24,8 @@ def interlock(word_1:str, word_2:str, start_index:int, alternate_step:int) -> st
 
 if __name__ == '__main__':
 
-    from exercise_10_9 import append_words
-    from exercise_10_10 import in_bisect
-
     file = 'words.txt'
-    word_list = append_words(file)
+    word_list = concatenate_words(file)
     start = 0
     step = 3
     for i in range(len(word_list) - 1):

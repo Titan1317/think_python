@@ -33,16 +33,16 @@ Programs:
 
 • Referencing is the association between a variable and its value.
 
+• An object is something a variable can refer to. An object has a type and a value.
+
 • Aliasing is a circumstance where two or more variables refer to the same object.
 	(a is b) == True
 
-• Assignment are names that refer to a value.
+• Assignments are names that refer to a value.
 
 • An expression is a combination of vlaues, variables and operators.
 
 • The interpreter evaluates expressions and executes statements.
-
-• An object is something a variable can refer to. An object has a type and a value.
 
 • A statement is a unit of code that has an ffect like creating a variable or displaying a value. Statements generally don't have values.
 
@@ -51,6 +51,11 @@ Programs:
 
 
 PROGRAM DEVELOPMENT:
+
+• Guarding is a programming pattern that uses conditional statements to check for and handle
+	circumstances that might cause an error.
+
+• Scaffolding is code that is used during program development but is not part of the final version.
 
 • A development plan is a process for writing programs. One process is is “encapsulation and generalization”. The steps of this process are:
 
@@ -78,6 +83,9 @@ PROGRAM DEVELOPMENT:
 		or consolidate multiple statements into compound expressions, but only if it does
 		not make the program difficult to read.
 
+
+DEBUGGING:
+
 • Breaking a large program into smaller functions creates natural checkpoints for
 	debugging. If a function is not working, there are three possibilities to consider:
 
@@ -88,11 +96,45 @@ PROGRAM DEVELOPMENT:
 
 		• There is something wrong with the return value or the way it is being used.
 
-• Guarding is a programming pattern that uses conditional statements to check for and handle
-	circumstances that might cause an error.
+• Global variables can be useful, but if you have a lot of them, and you modify them
+	frequently, they can make programs hard to debug.
 
-• Scaffolding is code that is used during program development but is not part of the final version.
+• As you work with bigger datasets it can become unwieldy to debug by printing and
+	checking the output by hand. Here are some suggestions for debugging large datasets:
 
+	- Scale down the input:
+		If possible, reduce the size of the dataset. For example if the program reads a text
+		file, start with just the first 10 lines, or with the smallest example you can find.
+		You can either edit the files themselves, or (better) modify the program so it
+		reads only the first n lines.
+		If there is an error, you can reduce n to the smallest value that manifests the error,
+		and then increase it gradually as you find and correct errors.
+	
+	- Check summaries and types:
+		Instead of printing and checking the entire dataset, consider printing summaries
+		of the data: for example, the number of items in a dictionary or the total of a list
+		of numbers.
+		A common cause of runtime errors is a value that is not the right type. For
+		debugging this kind of error, it is often enough to print the type of a value.
+
+	- Write self-checks:
+		Sometimes you can write code to check for errors automatically. For example, if
+		you are computing the average of a list of numbers, you could check that the
+		result is not greater than the largest element in the list or less than the smallest.
+		This is called a “sanity check” because it detects results that are “insane”.
+		Another kind of check compares the results of two different computations to see
+		if they are consistent. This is called a “consistency check”.
+
+	- Format the output:
+		Formatting debugging output can make it easier to spot an error. We saw an
+		example in “Debugging” on page 70. The pprint module provides a pprint function
+		that displays built-in types in a more human-readable format (pprint stands
+		for “pretty print”).
+		Again, time you spend building scaffolding can reduce the time you spend
+		debugging.
+
+• Again, time you spend building scaffolding can reduce the time you spend
+	debugging.
 
 STRINGS:
 
@@ -110,7 +152,7 @@ STRINGS:
 
 • Searching is a pattern of traversal that stops when it finds what it is looking for.
 
-
+ 
 LISTS:
 
 • The syntax for accessing the elements of a list is the same as for accessing the characters
@@ -160,4 +202,41 @@ LISTS:
 • Filtering is a processing pattern that traverses a list and selects the elements that satisfy
 	some criterion.
 
-	
+
+DICTIONARIES:
+
+• A dictionary contains a collection of indices, which are called keys, and a collection
+	of values. Each key is associated with a single value.
+
+• In mathematical language, a dictionary represents a mapping from keys to values, so
+	you can also say that each key “maps to” a value.
+
+• The association of a key and a value is called a key-value pair or sometimes an item.
+
+• The in operator works on dictionaries, too; it tells you whether something appears as
+	a key in the dictionary.
+
+• To see whether something appears as a value in a dictionary, you can use the method
+	values, which returns a collection of values, and then use the in operator.
+
+• Dictionaries have a method called get that takes a key and a default value. If the key
+	appears in the dictionary, get returns the corresponding value; otherwise it returns
+	the default value.
+
+• Lookup: Looking up the value of a key is called lookup.
+
+• The raise statement causes an exception. ex raise LookupError(error_messege)
+
+• A call graph shows a set of function frames, with lines connecting each frame to the 
+	frames of the functions it calls.
+
+• A previously computed value that is stored for later use is called a memo.
+
+• Mutable global varaibles can be modified inside a function without  a declaration.
+	To reassign the global variable inside a function, you need to declare it.
+
+
+
+
+
+

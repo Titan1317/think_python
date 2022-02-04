@@ -4,7 +4,6 @@ by Allen Downey
 """
 
 
-
 def rotate_word(word:str, rotation:int) -> str:
     """Takes a string and an integer as parameters,
         and returns a new string that contains the letters from the 

@@ -1,4 +1,4 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 6, Exercise 6-3
 by Allen Downey
     Code written by Mustafa Ali.
@@ -14,7 +14,7 @@ def middle(word):
     return word[1:-1]
 
 def is_palindrome(word:str) -> bool:
-    """Returns True if word is a palindrome."""
+    """ Returns True if word is a palindrome."""
     if len('word') <= 2:
         return True
     elif first(word) == last(word):

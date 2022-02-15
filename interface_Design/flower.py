@@ -1,4 +1,4 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 4, Exercise 4-3
 by Allen Downey
     Code written by Mustafa Ali
@@ -10,23 +10,23 @@ import turtle
 
 
 def petal(turtle:object, radius:float, angle:float):
-    """Draws a petal shape from exercise 4-2.
-        -Arguments:
-            turtle: A turtle object.
-            radius: The radius extended by the arc.
-            angle: The angle extended by the arc.
+    """ Draws a petal shape from exercise 4-2.\n
+    -Arguments:
+        turtle: A turtle object.
+        radius: The radius extended by the arc.
+        angle: The angle extended by the arc.
     """
     for i in range(2):
         arc(turtle, radius, angle)
         turtle.lt(180 - angle)
 
 def flower_1(turtle: object, size:float, petals:int) -> None:
-    """This function arranges non overlapping petals into a
-        flower shape.
-            -Arguments:
-                turtle: A turtle object.
-                size: The height of each petal in pixels.
-                petals: The number of petals.
+    """ This function arranges non overlapping petals into a
+    flower shape.\n
+    -Arguments:
+            turtle: A turtle object.
+            size: The height of each petal in pixels.
+            petals: The number of petals.
     """
     step_angle = 360 / petals
     for i in range(petals):
@@ -34,12 +34,12 @@ def flower_1(turtle: object, size:float, petals:int) -> None:
         turtle.lt(step_angle)
 
 def flower_2(turtle: object, size:float, petals:int) -> None:
-    """This function rescales the petals such that they overlap,
-        resembling the shape of a flower.
-            -Arguments:
-                turtle: A turtle object.
-                size: The height of each petal in pixels.
-                petals: The number of petals.
+    """ This function rescales the petals such that they overlap,
+    resembling the shape of a flower.\n
+    -Arguments:
+            turtle: A turtle object.
+            size: The height of each petal in pixels.
+            petals: The number of petals.
     """
     step_angle = 360 / (petals / 2)     #The width of the petals increase.
     for i in range(petals):

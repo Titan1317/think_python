@@ -1,4 +1,4 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 5, Exercise 5-6
 by Allen Downey
     Code written by Mustafa Ali.
@@ -9,7 +9,7 @@ import turtle
 
 
 def koch_curve(t:object, length:float) -> None:
-    """Draws a koch curve with the given length.\n
+    """ Draws a koch curve with the given length.\n
     -Arguments:
         t: A turtle object
         length: length of each line segment

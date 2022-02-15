@@ -1,4 +1,4 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 4, Exercise 4-2
 by Allen Downey
     Code written by Mustafa Ali.
@@ -12,10 +12,10 @@ import turtle
 
 def slice(turtle:object, length:int) -> None:
     """A function that draws a straight line and returns
-        the turtle to it's original position.
-            -Arguments:
-                turtle: A turtle object.
-                length: The length of the line in pixels.
+    the turtle to it's original position.\n
+    -Arguments:
+        turtle: A turtle object.
+        length: The length of the line in pixels.
     """
     turtle.pd()
     turtle.fd(length)
@@ -24,15 +24,15 @@ def slice(turtle:object, length:int) -> None:
 
 
 def pie(turtle:object, length:int, slices:int) -> None:
-    """A general function that draws the shapes from Exercise
-        4-3.
-        It uses the symmetric properties of the lengths and
-        angles of Isoceles triangles to draw appropiately 
-        large polygons for the given the number of slices.
-            -Arguments:
-                turtle: A turtle object.
-                length: the length of the slices in pixels.
-                slices: The number of slices.
+    """ A general function that draws the shapes from Exercise
+    4-3.
+    It uses the symmetric properties of the lengths and
+    angles of Isoceles triangles to draw appropiately 
+    large polygons for the given the number of slices.\n
+    -Arguments:
+        turtle: A turtle object.
+        length: the length of the slices in pixels.
+        slices: The number of slices.
     """
     angle = 360 / slices  #Angle between the two equal sides of the triangle.
     opposite_angle = (180 - angle) / 2  #Opposite angles of the triangle.

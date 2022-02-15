@@ -1,4 +1,4 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 4, Exercise 4-5
 by Allen Downey
     Code written by Mustafa Ali.
@@ -10,7 +10,7 @@ import turtle
 
 
 def archimedian_spiral(turtle:object, angle:float):
-    """Draws an  archimedian_spiral with the given angle.
+    """ Draws an  archimedian_spiral with the given angle.
     t: Turtle
     angle: degrees rotated
     """

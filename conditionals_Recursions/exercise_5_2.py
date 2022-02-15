@@ -1,4 +1,4 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 5, Exercise 5-2
 by Allen Downey
     Code written by Mustafa Ali.
@@ -26,9 +26,9 @@ def check_fermat(a:int, b:int, c:int, n:int) -> None:
         print("No, that doesn’t work.")
 
 def input_fermat() -> None:
-    """A function that prompts the user to enter some integers
-        and calls check_fermat to check wether fermats' theorem
-        is upheld for the given integers.
+    """ A function that prompts the user to enter some integers
+    and calls check_fermat to check wether fermats' theorem
+    is upheld for the given integers.
     """
     a = input("Enter an integer for 'a'\n")
     b = input("Enter an integer for 'b'\n")

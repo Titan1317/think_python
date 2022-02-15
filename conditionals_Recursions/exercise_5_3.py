@@ -1,12 +1,12 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 5, Exercise 5-3
 by Allen Downey
     Code written by Mustafa Ali.
 """
 
 def is_triangle(a:int, b:int, c:int) -> None:
-    """Checks if the three given integers, 'a', 'b' and 'c'
-        can form sides of a traingle.
+    """ Checks if the three given integers, 'a', 'b' and 'c'
+    can form sides of a traingle.
     """
     check_1 = a + b == c
     check_2 = a + c == b
@@ -17,8 +17,8 @@ def is_triangle(a:int, b:int, c:int) -> None:
         print('Yes')
 
 def input_sides() -> None:
-    """Promts the user to enter three integers and checks wether
-        the integers can form the sides of a triangle
+    """ Promts the user to enter three integers and checks wether
+    the integers can form the sides of a triangle
     """
     side_1 = input('Enter an Integer\n')
     side_2 = input('Enter an Integer\n')

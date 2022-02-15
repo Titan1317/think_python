@@ -9,7 +9,7 @@ import time
 
 def append_words( file:str) -> list:
     """ Reads the file words.txt and builds a list with one element per
-        word using the append method.
+    word using the append method.
     """
     fin = open(file) 
     line = fin.readline()
@@ -21,7 +21,7 @@ def append_words( file:str) -> list:
 
 def concatenate_words(file:str) -> list:
     """Reads the file words.txt and builds a list with one element per
-        word using concatenation."""
+    word using concatenation."""
     fin = open(file) 
     line = fin.readline()
     word_list = []

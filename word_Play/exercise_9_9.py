@@ -30,7 +30,7 @@ def solve_puzzle(age:int) -> bool:
 if __name__ == '__main__':
     for i in range(13,60):  # Extreme approximation of the fertility age range in women.
         if solve_puzzle(i):
-            print('Age of Mom: ' + str(i + solve_puzzle(i)) + ' Age of Son: ' + str(solve_puzzle(i)))
+            print('Age of Mom: ' + str(i + solve_puzzle(i)) + '  Age of Son: ' + str(solve_puzzle(i)))
 
 
 

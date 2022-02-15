@@ -10,7 +10,7 @@ from random import randint
 
 def generate_brithdays() -> list:
     """ Generates a list of strings, where each string is a 
-        random birthday date.
+    random birthday date.
     """
     birthdays = []
     for i in range(23):

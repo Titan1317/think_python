@@ -1,0 +1,13 @@
+1. O(n**3).
+
+2. O(n**3).
+
+3.if a,b are in O(g), then a.f + b is O(g**2).
+	If a,b are O(h), then a.f + b is O(h.g).
+	If a and b are constants then a.f + b is O(g).
+
+4. f1 + f2 is in O(g).
+
+5. f1 + f2 is in O(max(g,h)).
+
+6. f1 . f2 is in O(g.h).

@@ -6,9 +6,8 @@ by Allen Downey
 
 def is_anagram(word_1:str, word_2:str) -> bool:
     """ Takes two strings and returns True if they are
-         anagrams.\n
-        Two words are anagrams if you can rearrange the
-         letters from one to spell the other.
+    anagrams.\n Two words are anagrams if you can rearrange
+    the letters from one to spell the other.
     """
     if len(word_1) != len(word_2):
         return False

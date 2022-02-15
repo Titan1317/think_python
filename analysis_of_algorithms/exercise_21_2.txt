@@ -1,0 +1,17 @@
+1. A comaprison sort is a sorting algorithm that only reads the list elements by making 	comparisons between two elements to determine which one should be placed first in the 	sorted list. The only prerequisite is that the comparison operator forms a total preorder over the data.
+A comparison sort cannot perform better than O(n log n) on average.
+O(n * recursion levels) in the case of Radix sort.
+
+2. O(n ** 2) in the worst case. For a million 32 bit integers, sorting with bubble sort will take 1000000000000 steps. That is a lot of steps.
+
+3. O(n * key length). Radix sort only applies to integers, fixed size strings, floating	points 	and to "less than","greater than" or "lexicographic order" comparison predicates.
+
+4. A stable sorting algorithm preserves the relative order of  equal elements of the input list 	in the output list. Stable sorts preserve order over multiple sorts of the same data set.
+ex; Sorting alphabeitcally and then by age preserves the lexicographical order.
+
+5. Slow sort runs in O(n ** log n).
+
+6. The specific sorting algorithm is not mandated by the language standard in C and may vary 		across implementations, but the worst-case asymptotic complexity of the function is 		specified: a call to sort must perform O(n log n) comparisons when applied to a range of 	n elements. The sort function is not stable.
+Timsort has been Python's standard sorting algorithm since version 2.3. It is a stable 	sorting algorithm.
+
+7. Non-comparison sorting algorithms perform better on certain data sets, they rely on properties of the input data to sort faster rather than comparing the values. They tend to have more specific applications. timsort is an  adaptive general sorting algorithm that is designed to perform well on many kinds of real world data. 

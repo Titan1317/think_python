@@ -5,55 +5,59 @@ by Allen Downey
 """
 
 
-def do_twice(f):
-    f()
-    f()
+def do_twice(f, x, y):
+    f(x, y)
+    f(x, y)
 
-def do_four_times(f):
-    do_twice(f)
-    do_twice(f)
+def do_four_times(f, x, y):
+    do_twice(f, x, y)
+    do_twice(f, x, y)
 
 def print_border(x:str, y:str) -> None:
-    """x is either '|' or '+' and y is either '  ' or ' -'.
-    Prints  |         
-    or
-    Prints  + - - - -
-    depending on the choices of x and y respectively.
+    """ x is either '|' or '+' and y is either '  ' or ' -'.
+    Prints | or prints  + - - - - depending on the choices of x
+    and y respectively.
     """
     print(x + y * 4, end = ' ')
 
-def do_border_twice(x:str = '|', y:str = "  "):
-    """x is either '|' or '+' and y is either '  ' or ' -'.
-    Prints  '|         |         |' by default,
-    or
-    Prints  '+ - - - - + - - - - +'
+def do_border_twice(x:str, y:str) -> None:
+    """ x is either '|' or '+' and y is either '  ' or ' -'.
+    Prints ||| by default, or Prints + - - - - + - - - - +
     depending on the choices of f and s respectively.
     """
-    print_border(x, y)
-    print_border(x, y)
-
-def do_border_four_times(x:str = "|", y:str = "  ") -> None:
-    """x is either '|' or '+' and y is either '  ' or ' -'.
-    Prints  '|         |         |         |         |' by default,
-    or
-    Prints  '+ - - - - + - - - - + - - - - + - - - - +'
-    depending on the choices of f and s respectively."""
-    do_border_twice( x, y)
-    do_border_twice( x, y)
+    do_twice(print_border, x, y)
     print(end = x)
     print()
 
-def print_row( ):
-    do_border_four_times('+', ' -')
-    do_four_times(do_border_four_times)
+def do_border_four_times(x:str, y:str) -> None:
+    """ x is either '|' or '+' and y is either '  ' or ' -'.
+    Prints ||||| by default, or 
+    Prints + - - - - + - - - - + - - - - + - - - - + depending
+    on the choices of f and s respectively.
+    """
+    do_four_times(print_border, x, y)
+    print(end = x)
+    print()
 
-def print_grid():
-    do_four_times(print_row)
-    do_border_four_times('+', ' -')
+def print_row_1(x:str, y:str) -> None:
+    do_border_twice(x, y)
+    do_four_times(do_border_twice,'|', '  ')
 
+def print_row_2(x:str, y:str) -> None:
+    do_border_four_times(x,y)
+    do_four_times(do_border_four_times, '|', '  ')
+
+def print_grid_1(x:str, y:str) -> None:
+    do_twice(print_row_1, x, y)
+    do_border_twice(x, y)
+
+def print_grid_2(x:str, y:str) -> None:
+    do_four_times(print_row_2, x, y)
+    do_border_four_times(x, y)
 
 # the following condition checks whether we are
 # running as a script, in which case run the test code,
 # or being imported, in which case don't
 if __name__ == '__main__':
-    print_grid()
+    print_grid_1('+', ' -')
+    print_grid_2('+', ' -')

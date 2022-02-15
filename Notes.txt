@@ -1,4 +1,5 @@
 Programs:
+
 • A program is a sequence of instructions that specify a computation.
 
 • Programming is the process of breaking down a large, complex task 
@@ -7,18 +8,25 @@ Programs:
 
 	-Input:
 		Get data from the keyboard, a file, the network or some other device.
+
 	-Output:
-		Display data on the screen, save it in a file, send it over the network etc.
+		Display data on the screen, save it in a file, send it over the network
+		etc.
+
 	-Math:
-		Perform basic basic mathematical operation like addition and multiplication.
+		Perform basic basic mathematical operation like addition and
+		multiplication.
+
 	-Conditional execution:
 		Check for certain conditions and run the appropriate code.
+
 	-Repition:
 		Perform some action repeatedly, usually with some variation.
 
 • A value is one of the basic things a program works with like a letter or a number.
 
-• Programming languages are formal languages that have been designed to express computations.
+• Programming languages are formal languages that have been designed to express
+	computations.
 
 • Syntax rules in formal languages are strict and govern the structure of statements.
 	They come in two flavors:
@@ -40,14 +48,16 @@ Programs:
 
 • Assignments are names that refer to a value.
 
-• An expression is a combination of vlaues, variables and operators.
+• An expression is a combination of values, variables and operators.
 
 • The interpreter evaluates expressions and executes statements.
 
-• A statement is a unit of code that has an ffect like creating a variable or displaying a value. Statements generally don't have values.
+• A statement is a unit of code that has an effect like creating a variable or displaying a
+	value. Statements generally don't have values.
 
-• A traceback tells you what program file the error was in, what line and what functions were executing at that time.
-	The order of the functions in traceback is the same as the stack diagram.
+• A traceback tells you what program file the error was in, what line and what functions were
+	executing at that time.The order of the functions in traceback is the same as the
+	stack diagram.
 
 
 PROGRAM DEVELOPMENT:
@@ -55,9 +65,11 @@ PROGRAM DEVELOPMENT:
 • Guarding is a programming pattern that uses conditional statements to check for and handle
 	circumstances that might cause an error.
 
-• Scaffolding is code that is used during program development but is not part of the final version.
+• Scaffolding is code that is used during program development but is not part of the final
+	version.
 
-• A development plan is a process for writing programs. One process is is “encapsulation and generalization”. The steps of this process are:
+• A development plan is a process for writing programs. One process is is “encapsulation and
+	generalization”. The steps of this process are:
 
 	1. Start by writing a small program with no function definitions.
 
@@ -80,8 +92,8 @@ PROGRAM DEVELOPMENT:
 	2. Use variables to hold intermediate values so you can display and check them.
 
 	3. Once the program is working, you might want to remove some of the scaffolding
-		or consolidate multiple statements into compound expressions, but only if it does
-		not make the program difficult to read.
+		or consolidate multiple statements into compound expressions, but only if it
+		does not make the program difficult to read.
 
 
 DEBUGGING:
@@ -89,8 +101,8 @@ DEBUGGING:
 • Breaking a large program into smaller functions creates natural checkpoints for
 	debugging. If a function is not working, there are three possibilities to consider:
 
-		• There is something wrong with the arguments the function is getting; a precondition
-			is violated.
+		• There is something wrong with the arguments the function is getting; a
+		preconditionis violated.
 
 		• There is something wrong with the function; a postcondition is violated.
 
@@ -103,27 +115,27 @@ DEBUGGING:
 	checking the output by hand. Here are some suggestions for debugging large datasets:
 
 	- Scale down the input:
-		If possible, reduce the size of the dataset. For example if the program reads a text
-		file, start with just the first 10 lines, or with the smallest example you can find.
-		You can either edit the files themselves, or (better) modify the program so it
-		reads only the first n lines.
-		If there is an error, you can reduce n to the smallest value that manifests the error,
-		and then increase it gradually as you find and correct errors.
+		If possible, reduce the size of the dataset. For example if the program reads
+		a text file, start with just the first 10 lines, or with the smallest example
+		you can find. You can either edit the files themselves, or (better) modify the
+		program so it reads only the first n lines. If there is an error, you can reduce
+ 		n to the smallest value that manifests the error, and then increase it gradually
+		as you find and correct errors.
 	
 	- Check summaries and types:
 		Instead of printing and checking the entire dataset, consider printing summaries
-		of the data: for example, the number of items in a dictionary or the total of a list
-		of numbers.
+		of the data: for example, the number of items in a dictionary or the total of a
+		list of numbers.
 		A common cause of runtime errors is a value that is not the right type. For
 		debugging this kind of error, it is often enough to print the type of a value.
 
 	- Write self-checks:
 		Sometimes you can write code to check for errors automatically. For example, if
 		you are computing the average of a list of numbers, you could check that the
-		result is not greater than the largest element in the list or less than the smallest.
-		This is called a “sanity check” because it detects results that are “insane”.
-		Another kind of check compares the results of two different computations to see
-		if they are consistent. This is called a “consistency check”.
+		result is not greater than the largest element in the list or less than the
+		smallest. This is called a “sanity check” because it detects results that are 
+		“insane”. Another kind of check compares the results of two different computations
+		to see if they are consistent. This is called a “consistency check”.
 
 	- Format the output:
 		Formatting debugging output can make it easier to spot an error. We saw an
@@ -135,6 +147,10 @@ DEBUGGING:
 
 • Again, time you spend building scaffolding can reduce the time you spend
 	debugging.
+
+• The isinstance() function returns True if the specified object is of the specified type,
+	otherwise False. If the type parameter is a tuple, this function will return True
+	if the object is one of the types in the tuple.
 
 STRINGS:
 
@@ -148,7 +164,8 @@ STRINGS:
 
 • A slice is a part of a string specified by a range of indices.
 
-• Traversing is to iterate through the items in a sequence, performing a similar operation on each.
+• Traversing is to iterate through the items in a sequence, performing a similar operation on
+	each.
 
 • Searching is a pattern of traversal that stops when it finds what it is looking for.
 
@@ -177,30 +194,31 @@ LISTS:
 • Since lists are mutable, it is often useful to make a copy before performing operations
 	that modify lists.
 
-• The append method adds a new element to the end of a list and returns None.
-	- Extend takes a list as an argument and appends all of the elements, leaves the list
-		unmodified.
-	- Sort arranges the elements of the list from low to high and return None.
+• The append() method adds a new element to the end of a list and returns None.
+	- extend() takes a sequence as an argument and appends all of the elements, leaves the 
+	  given list (i.e the argument) unmodified.
+	- sort() arranges the elements of the list from low to high and return None.
 
 • There are several ways to delete elements from a list. If you know the index of the
-	element you want, you can use the pop method, which returns the element.
+	element you want, you can use the pop() method, which returns the element.
 	- If you don’t provide an index, it deletes and returns the last element.
 	- If you know the element you want to remove (but not the index), you can use remove,
-		The return value from remove is None
+	  The return value from remove is None.
 	
-• The list function breaks a string into individual letters and returns a list of all the
-	letters. If you want to break a string into words, you can use the split method, an 
-	optional argument called a delimiter specifies which characters to use as word boundaries.
+• The list function breaks a sequence into individual items and returns a list of all the
+	items. If you want to break a string into words, you can use the split(delimiter)
+	method, an optional argument called a delimiter specifies which characters to use
+	as word boundaries.
 
 
-• Reducing is a processing pattern that traverses a sequence and accumulates the elements into
-	a single result.
+• Reducing is a processing pattern that traverses a sequence and accumulates the elements
+	into a single result.
 
 • Mapping is a processing pattern that traverses a sequence and performs an operation on
 	each element.
 
-• Filtering is a processing pattern that traverses a list and selects the elements that satisfy
-	some criterion.
+• Filtering is a processing pattern that traverses a list and selects the elements that
+	satisfy	some criterion.
 
 
 DICTIONARIES:
@@ -217,7 +235,7 @@ DICTIONARIES:
 	a key in the dictionary.
 
 • To see whether something appears as a value in a dictionary, you can use the method
-	values, which returns a collection of values, and then use the in operator.
+	values(), which returns a collection of values, and then use the in operator.
 
 • Dictionaries have a method called get() that takes a key and a default value. If the key
 	appears in the dictionary, get returns the corresponding value; otherwise it returns
@@ -239,7 +257,103 @@ DICTIONARIES:
 	To reassign the global variable inside a function, you need to declare it.
 
 
+TUPLES:
+
+• Syntactically, a tuple is a comma-separated list of values, Although it is not necessary,
+	it is common to enclose tuples in parentheses. To create a tuple with a single 
+	element, you have to include a final comma.
+
+• Because tuples are immutable, you can’t modify the elements. But you can replace
+	one tuple with another.
+
+• The relational operators work with tuples and other sequences; Python starts by comparing
+	the first element from each sequence. If they are equal, it goes on to the next
+	elements, and so on, until it finds elements that differ. Subsequent elements are not
+	considered (even if they are really big).
+
+• Strictly speaking, a function can only return one value, but if the value is a tuple, the
+	effect is the same as returning multiple values.
+
+• The built-in function divmod takes two arguments and returns a tuple of two values:
+	the quotient and remainder.
+
+• max and min are built-in functions that find the largest and smallest elements of a
+	sequence.
+
+• The * (gather) operator, is used when the number of arguments given to a function is 
+	not determined. Note: *sequence splits a sequence into individual items.
+	The * operator is used mainly in the context of arguments.
+
+• zip is a built-in function that takes two or more sequences and returns a list of tuples
+	where each tuple contains one element from each sequence. The result is a zip object
+	that knows how to iterate through the pairs, i.e for pair in zip(sequence_1, sequence_2).
+
+• A zip object is a kind of iterator, which is any object that iterates through a sequence.
+	You cannot index elements of an iterator. In order to do so, use list(iterator)
+
+• You can use tuple assignment in a for loop to traverse a squence of tuples.
+
+• If you need to traverse the elements of a sequence and their indices, you can use the
+	built-in function enumerate. The result from enumerate is an enumerate object 
+	(Iterator), which iterates a sequence of pairs (index, respective_element).
+
+• The in operator works on iterators.
+
+• Dictionaries have a method called items() that returns a sequence of tuples, where each
+	tuple is a key-value pair. The result is a dict_items object, which is an iterator
+	that iterates the key-value pairs.
+
+• The dictionary method update() also takes a list of tuples and adds them, as key-value
+	pairs, to an existing dictionary.
+
+• Python provides the built-in function sorted, which takes any kind of sequence and returns a
+	new list with the same elements in sorted order.
+
+• reversed takes a sequence and returns an iterator that traverses the list in
+	reverse order.
 
 
+RUNTIME ANALYSIS OF BASIC PYTHON OPERATIONS:
 
+• In Python, most arithmetic operations are constant time; multiplication usually takes
+	longer than addition and subtraction, and division takes even longer, but these runtimes
+	don’t depend on the magnitude of the operands. Very large integers are an
+	exception; in that case the runtime increases with the number of digits.
 
+• Indexing operations—reading or writing elements in a sequence or dictionary—are
+	also constant time, regardless of the size of the data structure.
+
+• A for loop that traverses a sequence or dictionary is usually linear, as long as all of
+	the operations in the body of the loop are constant time. Unless you can prove that loop 
+	traverses a sequences a constant number of times regardless of the size of the input.
+
+• Most string and tuple operations are linear, except indexing and len, which are constant
+	time.
+
+• The built-in functions min(sequence), max(sequence) and sum(sequence) are linear.
+
+• The runtime of a slice operationis proportional to the length of the output, but independent 
+	of the size of the input.
+
+• String concatenation is linear; the runtime depends on the sum of the lengths of the operands.
+
+• All string methods are linear, but if the lengths of the strings are bounded by a constant—
+	for example, operations on single characters—they are considered constant time.
+
+• The string method join is linear; the runtime depends on the total length of the strings.
+
+• Most list methods are linear, but there are some exceptions:
+	- Adding an element to the end of a list is constant time on average; when it runs
+		out of room it occasionally gets copied to a bigger location, but the total time 
+		for n operations is O(n), so the average time for each operation is O(1).
+
+	- Removing an element from the end of a list is constant time.
+
+	- Sorting is O(n logn) .
+
+• Most dictionary operations and methods are constant time, but there are some exceptions:
+	- The runtime of update is proportional to the size of the dictionary passed as a
+		parameter, not the dictionary being updated.
+
+	- keys, values and items are constant time because they return iterators. But if
+		you loop through the iterators, the loop will be linear.

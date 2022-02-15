@@ -6,7 +6,7 @@ by Allen Downey
 
 def middle(t:list) -> list:
     """ Takes a list and returns a new list that contains all
-        but the first and last elements of the given list.
+    but the first and last elements of the given list.
     """
     result = t[1: -1]
     return result

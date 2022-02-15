@@ -1,4 +1,4 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 7, Exercise 7-1
 by Allen Downey
     Code written by Mustafa Ali.
@@ -7,8 +7,8 @@ from math import sqrt
 
 
 def mysqrt(a:int) -> float:
-    """Uses Newtons' method to approximate the square root of the
-         given number.
+    """ Uses Newtons' method to approximate the square root of the
+    given number.
     """
     x = a / 2 
     while True:
@@ -20,9 +20,10 @@ def mysqrt(a:int) -> float:
 
 
 def test_square_root() -> None:
-    """Prints a table that compares the return values of 
-        mysqrt and the sqrt method from the math module,
-        for values from 1 to 9"""
+    """ Prints a table that compares the return values of 
+    mysqrt and the sqrt method from the math module,
+    for values from 1 to 9.
+    """
     print('a' + ' ' * 2, end = ' ')
     print('mysqrt(a)' + ' ' * 11, end = ' ')
     print('math.sqrt(a)' + ' ' * 8, end = ' ')
@@ -40,4 +41,6 @@ def test_square_root() -> None:
              end = ' ')
         print(diff)
 
-test_square_root()
+
+if __name__ == '__main__':
+    test_square_root()

@@ -7,7 +7,7 @@ by Allen Downey
 
 def cumsum(t:list) -> list:
     """ Takes a list of numbers and returns the cumulative
-        sum.
+    sum.
     """
     result = []
     cum = 0

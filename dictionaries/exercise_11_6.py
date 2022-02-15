@@ -1,14 +1,14 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 11, Exercise 11-6
 by Allen Downey
     Code written by Mustafa Ali
 """
 
 
-import pronounce
-
-
 if __name__ == '__main__':
+
+    import pronounce
+
     d = pronounce.read_dictionary()
     for word in d:
         if len(word) == 5:
@@ -18,5 +18,5 @@ if __name__ == '__main__':
             pronounce_2 = d.get(word_1)
             pronounce_3 = d.get(word_2)
             if (pronounce_2 and pronounce_3):
-               if (pronounce_1 == pronounce_2) and (pronounce_1 == pronounce_3):
+               if (pronounce_1 == pronounce_2 == pronounce_3):
                 print(word, word_1, word_2)

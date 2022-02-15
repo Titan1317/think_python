@@ -6,7 +6,7 @@ by Allen Downey
 
 def is_sorted(t:list) -> bool:
     """ Takes a list as a parameter and returns True if
-        the list is sorted in ascending order and False otherwise.
+    the list is sorted in ascending order and False otherwise.
     """
     if len(t) <= 1:
         return True

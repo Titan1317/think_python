@@ -3,4 +3,5 @@ def print_n(s, n):
         n = n - 1
         print(s)
 
-print_n(1, 10)
+if __name__ == '__main__':
+    print_n(1, 10)

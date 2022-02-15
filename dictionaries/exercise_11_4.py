@@ -7,7 +7,7 @@ by Allen Downey
 
 def has_duplicates(_list:list) -> bool:
     """ Takes a list and returns True if there is
-         any element that appears more than once.
+    any element that appears more than once.
     """
     d = dict()
     for element in _list:

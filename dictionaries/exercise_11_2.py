@@ -1,4 +1,4 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 11, Exercise 11-2
 by Allen Downey
     Code written by Mustafa Ali
@@ -8,9 +8,7 @@ by Allen Downey
 def invert_dict(d):
     inverse = dict()
     for key in d:
-        i_key = d[key]  # Inverted key
-        i_val = key     # Inverted Value
-        inverse.setdefault(i_key, []).append(i_val)
+        inverse.setdefault(d[key], []).append(key)
     return inverse
 
 

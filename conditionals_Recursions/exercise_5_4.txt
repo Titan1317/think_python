@@ -1,20 +1,3 @@
-"""This file contains a code example related to
-Think Python, 2nd Edition, Chapter 5, Exercise 5-4
-by Allen Downey
-    Written by Mustafa Ali.
-"""
-
-
-def recurse(n, s):
-	if n == 0:
-		print(s)
-	else:
-		recurse(n-1, n+s)
-
-
-recurse(3, 0)
-
-
 stack_diagram:
 	__main__ 
 
@@ -25,7 +8,7 @@ stack_diagram:
 		     s -> 3
 
 	recurse  --> n -> 1
-		     s -> 5
+		     s -> 
 
 	recurse  --> n -> 0
 		     s -> 6

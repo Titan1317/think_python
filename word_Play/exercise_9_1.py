@@ -35,10 +35,6 @@ def is_abecedarian(word:str) -> bool:
     return True
 
 
-
-
-
-
 if __name__ == '__main__':
     fin = open('words.txt')
     line = fin.readline()

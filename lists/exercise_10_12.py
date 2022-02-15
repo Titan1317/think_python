@@ -9,8 +9,7 @@ from exercise_10_10 import in_bisect
 
 def interlock(word_1:str, word_2:str, start_index:int, alternate_step:int) -> str:
     """ Takes alternating characters from each string and makes a new string.
-        Two words “interlock” if taking alternating letters from 
-        each forms a new word.
+    Two words “interlock” if taking alternating letters from each forms a new word.
     """    
     result = []
     delimiter = ''

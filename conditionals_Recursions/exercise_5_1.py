@@ -15,9 +15,6 @@ if __name__ == '__main__':
     l_hours = round(hours - int(days) * 24)   # Local hours.
     l_minutes = int(minutes - int(hours) * 60)  # Local minutes.
     l_seconds = int(seconds - int(minutes) * 60)    # Local seconds.
-
-    time = time.ctime(seconds)
-    print(time)
     print('It has been ' + str(int(days))+' days, ' + 
            str(l_hours) +' hours, ' + str(l_minutes)
-           + ' minutes, and ' + str(l_seconds) + ' seconds\nsince the epoch')
+           + ' minutes and ' + str(l_seconds) + ' seconds since the epoch')

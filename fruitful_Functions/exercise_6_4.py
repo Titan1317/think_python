@@ -1,16 +1,17 @@
 """This module contains a code example related to
-Think Python, 2nd Edition, Chapter 6, Exercise 6-5
+Think Python, 2nd Edition, Chapter 6, Exercise 6-4
 by Allen Downey
     Code written by Mustafa Ali.
 """
 
 
-def gcd(a:float, b:float) -> float:
-    if b == 0:
-        return a
-    else:
-        r = a % b
-        return gcd(b, r)
+def is_power(a:float, b:float) -> bool:
+    """Returns True if 'a' is a power of 'b'"""
+    if a == 1 or a == b:  # Special case b ** 0 == 1
+        return True
+    elif a % b == 0 and b != 1:
+        return(is_power(a/b, b))
+
 
 if __name__ == '__main__':
-    print(gcd(43, 34))
+    print(is_power(1, 6))

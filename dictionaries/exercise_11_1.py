@@ -1,4 +1,4 @@
-"""This module contains a code example related to
+""" This module contains a code example related to
 Think Python, 2nd Edition, Chapter 11, Exercise 11-1
 by Allen Downey
     Code written by Mustafa Ali

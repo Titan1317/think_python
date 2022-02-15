@@ -3,14 +3,16 @@ Think Python, 2nd Edition, Chapter 5, Exercise 5-6
 by Allen Downey
     Code written by Mustafa Ali.
 """
+
+
 import turtle
 
 
 def koch_curve(t:object, length:float) -> None:
-    """Draws a koch curve with the given length.
-        -Arguments:
-            t: A turtle object
-            length: length of each line segment
+    """Draws a koch curve with the given length.\n
+    -Arguments:
+        t: A turtle object
+        length: length of each line segment
     """
     if length <= 3:
         t.fd(length)
@@ -26,7 +28,7 @@ def koch_curve(t:object, length:float) -> None:
 
 
 def snow_flake(t:object, length:float) -> None:
-    """Uses the koch_curve to draw a shape resembling a snowflake
+    """ Uses the koch_curve to draw a shape resembling a snowflake
     """
     for i in range(6):
         koch_curve(t, length)

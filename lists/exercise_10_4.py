@@ -6,7 +6,7 @@ by Allen Downey
 
 def chop(t:list) -> None:
     """ Takes a list, modifies it by removing the first and last
-        elements, and returns None.
+    elements, and returns None.
     """
     del t[0]
     del t[-1]

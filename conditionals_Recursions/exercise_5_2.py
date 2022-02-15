@@ -8,13 +8,13 @@ from math import pow
 
 
 def check_fermat(a:int, b:int, c:int, n:int) -> None:
-    """A function that checks if fermats' theorem is upholded
+    """ A function that checks if fermats' theorem is upholded
     given the following arguments;
-        'a' (an integer),
-        'b' (an integer),
-        'c' (an integer) and
-        'n' (the exponent to which each integer is raised,
-        'n' should be greater than 2).
+    'a' (an integer),
+    'b' (an integer),
+    'c' (an integer) and
+    'n' (the exponent to which each integer is raised,
+    'n' should be greater than 2).
     """
     a_n = pow(a, n)
     b_n = pow(b, n)
@@ -23,7 +23,7 @@ def check_fermat(a:int, b:int, c:int, n:int) -> None:
     if fermat and n > 2:
         print('Holy smokes, Fermat was wrong!')
     else:
-        print('No, that doesn’t work.')
+        print("No, that doesn’t work.")
 
 def input_fermat() -> None:
     """A function that prompts the user to enter some integers

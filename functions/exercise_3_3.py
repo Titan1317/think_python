@@ -55,9 +55,8 @@ def print_grid_2(x:str, y:str) -> None:
     do_four_times(print_row_2, x, y)
     do_border_four_times(x, y)
 
-# the following condition checks whether we are
-# running as a script, in which case run the test code,
-# or being imported, in which case don't
+
 if __name__ == '__main__':
     print_grid_1('+', ' -')
+    print()
     print_grid_2('+', ' -')

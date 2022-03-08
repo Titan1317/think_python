@@ -19,8 +19,6 @@ def do_four(f , v):
     do_twice(f , v)
     do_twice(f , v)
 
-# the following condition checks whether we are
-# running as a script, in which case run the test code,
-# or being imported, in which case don't
+
 if __name__ == '__main__':
     do_four(print_twice , 'spam')

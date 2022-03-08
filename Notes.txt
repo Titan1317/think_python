@@ -37,7 +37,7 @@ Programs:
 			-3 += 3
 			+= is not a legal combination of tokens in math 
 
-• Variables are names that refer to ojects.
+• Variables are names that refer to objects.
 
 • Referencing is the association between a variable and its value.
 
@@ -86,6 +86,7 @@ PROGRAM DEVELOPMENT:
 		an appropriately general function.
 
 • The key aspects of the 'incremental development' process are:
+
 	1. Start with a working program and make small incremental changes. At any point,
 		if there is an error, you should have a good idea where it is.
 
@@ -102,7 +103,7 @@ DEBUGGING:
 	debugging. If a function is not working, there are three possibilities to consider:
 
 		• There is something wrong with the arguments the function is getting; a
-		preconditionis violated.
+		precondition is violated.
 
 		• There is something wrong with the function; a postcondition is violated.
 
@@ -142,8 +143,6 @@ DEBUGGING:
 		example in “Debugging” on page 70. The pprint module provides a pprint function
 		that displays built-in types in a more human-readable format (pprint stands
 		for “pretty print”).
-		Again, time you spend building scaffolding can reduce the time you spend
-		debugging.
 
 • Again, time you spend building scaffolding can reduce the time you spend
 	debugging.

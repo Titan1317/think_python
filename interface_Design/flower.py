@@ -48,11 +48,7 @@ def flower_2(turtle: object, size:float, petals:int) -> None:
         turtle.rt(step_angle / 2)
 
 
-# the following condition checks whether we are
-# running as a script, in which case run the test code,
-# or being imported, in which case don't
 if __name__ == '__main__':
-    turtle.tracer(0, 0)
     bob = turtle.Turtle()
     length = 100
     base = 2.5 * length
@@ -73,7 +69,6 @@ if __name__ == '__main__':
     flower_1(bob, 3.5 * length, 20)
 
     bob.hideturtle()
-    turtle.update()
 
     # wait for the user to close the window
     turtle.mainloop()

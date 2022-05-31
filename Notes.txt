@@ -68,7 +68,7 @@ PROGRAM DEVELOPMENT:
 • Scaffolding is code that is used during program development but is not part of the final
 	version.
 
-• A development plan is a process for writing programs. One process is is “encapsulation and
+• A development plan is a process for writing programs. One process is “encapsulation and
 	generalization”. The steps of this process are:
 
 	1. Start by writing a small program with no function definitions.

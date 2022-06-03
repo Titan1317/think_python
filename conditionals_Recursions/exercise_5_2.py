@@ -1,13 +1,12 @@
-""" This module contains a code example related to
-Think Python, 2nd Edition, Chapter 5, Exercise 5-2
-by Allen Downey
+""" This module contains a code example related to Think Python, 2nd Edition,
+Chapter 5, Exercise 5-2 by Allen Downey
     Code written by Mustafa Ali.
 """
 
 from math import pow
 
 
-def check_fermat(a:int, b:int, c:int, n:int) -> None:
+def check_fermat(a: int, b: int, c: int, n: int) -> None:
     """ A function that checks if fermats' theorem is upholded
     given the following arguments;
     'a' (an integer),
@@ -24,6 +23,7 @@ def check_fermat(a:int, b:int, c:int, n:int) -> None:
         print('Holy smokes, Fermat was wrong!')
     else:
         print("No, that doesn’t work.")
+
 
 def input_fermat() -> None:
     """ A function that prompts the user to enter some integers

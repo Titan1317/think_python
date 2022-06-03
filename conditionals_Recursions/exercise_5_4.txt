@@ -1,4 +1,5 @@
 stack_diagram:
+
 	__main__ 
 
 	recurse	 --> n -> 3
@@ -8,14 +9,14 @@ stack_diagram:
 		     s -> 3
 
 	recurse  --> n -> 1
-		     s -> 
+		     s -> 5
 
 	recurse  --> n -> 0
 		     s -> 6
 
-This function prints the sum of all the integers from 1 to n, given an integer n.
-
 1) The program does not terminate. It exits with a runtime error since the maximum recursion
 	depth is reached.
-2) """This function takes an integer 'n', that is greater than or equals to zero and
-	returns the sum of all natural numbers from 1 to 'n'"""
+
+2) """ This function takes two numbers, 'n' and 's', such that ('n' >= 0) and returns the
+sum of all integers from 1 to 'n' plus 's'.
+"""

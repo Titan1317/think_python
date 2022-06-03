@@ -10,12 +10,13 @@ def compare(x, y) -> int:
         return -1
 
 
-def hypotenuse(a:float, b:float) -> float:
+def hypotenuse(a: float, b: float) -> float:
     return sqrt(pow(a, 2) + pow(b, 2))
 
 
-def is_between(x:float, y:float, z:float) -> bool:
+def is_between(x: float, y: float, z: float) -> bool:
     return x <= y <= z
 
+
 if __name__ == '__main__':
-   print(is_between(1,5,3))
+    print(is_between(1, 5, 3))

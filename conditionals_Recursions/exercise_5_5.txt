@@ -1,32 +1,35 @@
 stack_diagram:
-	__main__ --> bob -> turtle.Turtle()
-		     length -> 10
-		     n -> 2
 
-	draw	 --> t -> turtle.Turtle()
+	__main__
+
+	bob -> turtle.Turtle()
+	length -> 10
+	n -> 2
+
+	draw --> t -> bob
 		 --> length -> 10
 		 --> n -> 2
 
-	draw	 --> t -> turtle.Turtle()
+	draw --> t -> bob
 		 --> length -> 10
 		 --> n -> 1
 
-	draw	 --> t -> turtle.Turtle()
+	draw --> t -> bob
 		 --> length -> 10
 		 --> n -> 0
 
-	draw	 --> t -> turtle.Turtle()
+	draw --> t -> bob
 		 --> length -> 10
 		 --> n -> 0
 
-	draw	 --> t -> turtle.Turtle()
+	draw --> t -> bob
 		 --> length -> 10
 		 --> n -> 1
 
-	draw	 --> t -> turtle.Turtle()
+	draw --> t -> bob
 		 --> length -> 10
 		 --> n -> 0
 
-	draw	 --> t -> turtle.Turtle()
+	draw --> t -> bob
 		 --> length -> 10
 		 --> n -> 0

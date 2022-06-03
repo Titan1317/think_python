@@ -1,6 +1,5 @@
-""" This module contains a code example related to
-Think Python, 2nd Edition, Chapter 4, Exercise 4-5
-by Allen Downey
+""" This module contains a code example related to Think Python, 2nd Edition,
+Chapter 4, Exercise 4-5 by Allen Downey
     Code written by Mustafa Ali.
 """
 
@@ -9,26 +8,27 @@ from mypolygon import arc
 import turtle
 
 
-def archimedian_spiral(turtle:object, angle:float):
+def archimedian_spiral(turtle: object, angle: float):
     """ Draws an  archimedian_spiral with the given angle.
     t: Turtle
     angle: degrees rotated
     """
     for i in range(angle):
-        a = 0.25    
+        a = 0.25
         radius = a * i  # The radius of the arc drawn in the current iteration.
         arc(turtle, radius, 1)
-        turtle.hideturtle()
+    turtle.hideturtle()
 
 
 if __name__ == '__main__':
-    bob = turtle.Turtle()
     turtle.tracer(0, 0)
+    bob = turtle.Turtle()
 
     # draw a spiral centered on the origin
     radius = 50
     archimedian_spiral(bob, 2 * 720)
-
+    bob.hideturtle()
     turtle.update()
+
     # wait for the user to close the window
     turtle.mainloop()

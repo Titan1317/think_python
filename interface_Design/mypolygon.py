@@ -83,6 +83,6 @@ if __name__ == '__main__':
     bob.pd()
     circle(bob, radius)
     turtle.update()
-    
+
     # wait for the user to close the window
     turtle.mainloop()

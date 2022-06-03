@@ -29,6 +29,7 @@ def rotate_word(word:str, rotation:int) -> str:
             else:
                 offset = ord('A') - num_val
                 result += chr(ord('Z') - offset + 1)
+
         # Lower case
         else:
             if num_val > ord('z'):
